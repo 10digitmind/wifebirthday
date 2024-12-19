@@ -12,7 +12,7 @@ import image7 from './images/IMG_5770.JPG'
 import image8 from './images/IMG_8864.JPG'
 import image9 from './images/IMG_6425.JPG'
 import image10 from './images/IMG_2685.JPG'
-import "/Users/test/Downloads/callapp/callaoo/src/flipbook.css";
+import "./flipbook.css";
 import { Link } from "react-router-dom";
 import Confetti from "react-confetti";
 import music from './music/utomp3.com - John K  ilym Lyrics.mp3'
