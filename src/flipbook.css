@@ -1,0 +1,145 @@
+/* Container for the flipbook */
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/Users/test/Downloads/callapp/callaoo/src/images/IMG_6437.JPG');
+    background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  flex-direction: column;
+  }
+  
+  /* Flipbook overall styling */
+  .flipbook {
+    box-shadow: rgba(235, 235, 239, 0.1) 0px 4px 16px, rgba(240, 240, 243, 0.1) 0px 8px 24px, rgba(231, 231, 238, 0.1) 0px 16px 56px;
+    transform: scale(0.5) translateY(50%);
+    opacity: 0;
+    animation: emerge-from-bg 2s ease-out forwards;
+    border-radius: 5px;
+
+  }
+  
+  /* Individual pages */
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    padding: 20px;
+    height: 100%;
+ opacity: 1;
+    border-radius: 5px;
+    width: 100%;
+ 
+  }
+  
+  /* Title of the page */
+  .page-title {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  /* Image styling */
+  .page-image {
+    width: 90%;
+    height: auto;
+    border: 2px solid #ffffff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  /* Content text */
+  .page-content {
+    font-family: 'Times New Roman', serif;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 0 10px;
+    width: 300px;
+    font-style: bold;
+  }
+  .page img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 16px, rgba(255, 255, 255, 0.1) 0px 8px 24px, rgba(255, 255, 255, 0.1) 0px 16px 56px;
+    margin-top: 20px;
+    
+  }
+  
+  .count{
+    color: white;
+    margin-top: 20px;
+  }
+
+  @keyframes emerge-from-bg {
+    0% {
+      transform: scale(0.5) translateY(50%);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1) translateY(-10%);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .jastper-btn-con{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   gap: 5px;
+    margin-top: 50px;
+  }
+
+  .jastper-btn-con button{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    width: auto;
+    height: 40px;
+    border: 2px solid;
+    border-color: rgb(137, 235, 51);
+    font-family: sans-serif;
+    opacity: 1;
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+    text-transform: capitalize;
+
+  }
+
+  .jastper-btn-con button:hover{
+    opacity: 0.9;
+    background-color: rgb(137, 235, 51);
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+  }
+
+  
+
+  @media only screen and (max-width: 600px) {
+    .page-content{
+      width: 200px;
+    }
+
+    .page img{
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+      
+    }
+  }
