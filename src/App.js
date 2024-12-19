@@ -25,7 +25,7 @@ const SimpleForm = () => {
   ];
 
   const [birthday,setBirthday]=useState(false)
-  const [jasperMessage, setJasperMessage] = useState(false)
+
 
   const audioRef = useRef(null); // Reference for the audio element
   const [isPlaying, setIsPlaying] = useState(false); // Track play/pause state
@@ -53,9 +53,7 @@ const SimpleForm = () => {
   }, [images.length]);
 
 
-  function handleJasperClick (){
-    setJasperMessage(true)
-  }
+ 
   return (
     <div>
       
@@ -83,7 +81,7 @@ const SimpleForm = () => {
                     <h6 style={{ color: 'black', fontSize: "12px" }}>Birthday Wishes</h6>
                   </div>
                   <Link to={'/jasper'}>
-                  <button onClick={handleJasperClick}>Jasper ❤️</button>
+                  <button >Jasper ❤️</button>
                   </Link>
          
          <a href="https://go.screenpal.com/watch/cZlq31nnW2n" target="blank"><button>Family 👨‍👩‍👧‍👦 & Friends 👭</button></a>

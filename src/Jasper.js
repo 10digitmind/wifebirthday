@@ -1,6 +1,6 @@
 import React from "react";
 import HTMLFlipBook from "react-pageflip";
-import { useRef,useState,useEffect } from "react";
+import { useRef,useState } from "react";
 import image12 from "./images/IMG_6989.JPG";
 import image1 from './images/IMG_8001.JPG'
 import image2 from './images/IMG_5857.JPG'
