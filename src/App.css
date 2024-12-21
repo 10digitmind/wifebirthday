@@ -62,6 +62,7 @@
   position: absolute;
   top:400px;
   left:500px;
+  opacity: 0.9;
   border-radius: 10px;
   animation: emerge-from-bg 2s ease-out forwards;
   transform: scale(0.5) translateY(50%);
@@ -132,7 +133,7 @@
   }
   .details-con{
     top: 400px;;
-    left:20px;
+    left:25px;
     width: 300px;
   }
 }
